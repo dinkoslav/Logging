@@ -1,0 +1,17 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "../../../../../Users/Hristo.Nikov/Desktop/BookService.wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "messageContract": true,
+    "namespaceMappings": [
+      "*, SoapBookService"
+    ],
+    "targetFramework": "net6.0",
+    "typeReuseMode": "None"
+  }
+}

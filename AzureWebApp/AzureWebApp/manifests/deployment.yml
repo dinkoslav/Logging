@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: azurewebapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azurewebapp
+  template:
+    metadata:
+      labels:
+        app: azurewebapp 
+    spec:
+      containers:
+        - name: azurewebapp 
+          image: freetrialeus2containerregestry.azurecr.io/azurewebapp
+          ports:
+          - containerPort: 80

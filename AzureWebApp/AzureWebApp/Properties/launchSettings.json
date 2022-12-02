@@ -1,0 +1,27 @@
+{
+  "profiles": {
+    "AzureWebApp": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=9dadfc53-85fe-4fe2-aced-107cd2225e18;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/",
+        "AZURE_TENANT_ID": "da0d5d57-1f45-4743-963d-ec0e64763100"
+      },
+      "applicationUrl": "https://localhost:7063;http://localhost:5063",
+      "dotnetRunMessages": true
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+    },
+    "Bridge to Kubernetes": {
+      "commandName": "AzureDevSpacesLocal",
+      "launchBrowser": true
+    }
+  }
+}
